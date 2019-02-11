@@ -1,0 +1,55 @@
+.Header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.HeaderGroup{
+    display: flex;
+    height: 92px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo{
+    margin-left: 60px;
+}
+
+.LinkGroup{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.LinkGroup a{
+    font-size: 20px;
+    color: black;
+}
+
+.LinkGroup a:hover{
+    text-decoration: underline;
+    animation: 1s, rainbow, cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+@media (max-width: 480px) {
+
+    .HeaderGroup {
+        height: 64px;
+    }
+
+    .LinkGroup {
+        width: 188px;
+        margin-right: 16px;
+    }
+
+    .LinkGroup a {
+        font-size: 14px;
+    }
+
+    .Logo {
+        margin-left: 16px;
+        width: 40%;
+    }
+
+}
