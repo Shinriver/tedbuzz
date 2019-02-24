@@ -6,20 +6,18 @@
 
 .HeaderGroup{
     display: flex;
-    height: 92px;
+    padding-left: 64px;
+    padding-right: 64px;
+    height: 84px;
     align-items: center;
     justify-content: space-between;
 }
 
-.Logo{
-    margin-left: 60px;
-}
 
 .LinkGroup{
     display: flex;
     width: 300px;
     justify-content: space-between;
-    margin-right: 60px;
 }
 
 .LinkGroup a{
@@ -28,19 +26,20 @@
 }
 
 .LinkGroup a:hover{
-    text-decoration: underline;
-    animation: 1s, rainbow, cubic-bezier(0.075, 0.82, 0.165, 1)
+    /*text-decoration: underline;*/
+    border-bottom: 1px solid #000000
 }
 
 @media (max-width: 480px) {
 
     .HeaderGroup {
-        height: 64px;
+        height: 56px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .LinkGroup {
         width: 188px;
-        margin-right: 16px;
     }
 
     .LinkGroup a {
@@ -48,7 +47,6 @@
     }
 
     .Logo {
-        margin-left: 16px;
         width: 40%;
     }
 
